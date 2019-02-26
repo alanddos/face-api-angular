@@ -1,0 +1,13 @@
+<div style="position: relative" class="margin">
+  <video onplay="onPlay(this)" id="inputVideo" autoplay muted></video>
+  <canvas id="overlay"></canvas>
+</div>
+<ack-webcam
+  [(ref)]   = "webcam"
+  [options] = "options"
+  (catch)   = "onCamError($event)"
+></ack-webcam>
+<button (click)="genBase64()"> generate base64 </button>
+<button (click)="genPostData()"> generate post data </button>
+<button (click)="run()"> generate post data </button>
+<img src="{{base64}}" id="inputImage">
