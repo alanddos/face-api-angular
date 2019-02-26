@@ -85,6 +85,11 @@ export class WebcamDetectComponent implements OnInit {
     const result = await faceapi.detectSingleFace(videoEl, options)
     console.log(result)
 
+    console.log()
+    
+    
+    $('#overlay').height(videoEl.getAttribute('heigth'))
+    $('#overlay').width(videoEl.getAttribute('width'))
     if (result) {
       this.drawDetections(videoEl, $('#overlay').get(0), [result])
     }
