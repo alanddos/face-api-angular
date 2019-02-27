@@ -17,6 +17,7 @@ export class WebcamDetectComponent implements OnInit {
   constructor() {
     console.log(faceapi)
     faceapi.loadSsdMobilenetv1Model('assets/')
+    faceapi.loadMtcnnModel('assets/')
   }
 
   ngOnInit() {
@@ -46,7 +47,7 @@ export class WebcamDetectComponent implements OnInit {
     const MTCNN = 'mtcnn'
 
 
-    let selectedFaceDetector = SSD_MOBILENETV1
+    let selectedFaceDetector = MTCNN
 
     // ssd_mobilenetv1 options
     let minConfidence = 0.5
