@@ -7,11 +7,21 @@
 >
 
 </ack-webcam>
-<canvas id="overlay" style="position: absolute;left: 0px;"></canvas>  
+<canvas id="overlay" style="position: absolute;margin-left: 20px; left:15px"></canvas>
 </div>
+<div class="ui-g-6 ui-md-6 ui-lg-6" id="peopleInVideo" style="    position: absolute;
+    margin-left: 2px;
+    background-color: #bdcfe8;
+    color: white;
+    width: 412px;"></div>
+
+    <div style="    width: 100%;
+    height: 130px;
+    overflow: -webkit-paged-x;" id="detectedFaces">{{images}}</div>
 
 <button (click)="genBase64()"> generate base64 </button>
 <button (click)="genPostData()"> generate post data </button>
 <button (click)="run()"> generate post data </button>
+<button (click)="start()"> Start </button>
 <img src="{{base64}}" id="inputImage">
 <video onplay="onPlay(this)" id="inputVideo" autoplay muted style="widows: 320px;heigth:240px" style="display:none"></video>
