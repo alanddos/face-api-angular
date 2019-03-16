@@ -13,7 +13,7 @@ declare var faceDetectionControls: any;
   styleUrls: ['./webcam-detect.component.css']
 })
 export class WebcamDetectComponent implements OnInit {
-
+  images: any
   objeto = []
   constructor() {
     console.log(faceapi)
@@ -42,7 +42,9 @@ export class WebcamDetectComponent implements OnInit {
     // original size
     return faceapi.resizeResults(results, { width, height })
   }
-
+  onCamError(err){}
+ 
+  onCamSuccess(){}
   getFaceDetectorOptions() {
     const SSD_MOBILENETV1 = 'ssd_mobilenetv1'
     const TINY_FACE_DETECTOR = 'tiny_face_detector'
