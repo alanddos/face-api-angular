@@ -11,6 +11,7 @@ app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname + '/dist/face-api/index.html'))
 })
 app.post('/validarFace', function (req, res) {
+    res.send({code: 1, msg: 'Chegou no validar'})
     async function validarFace(req, res) {
         let faces;
         if (!req.body.id) {
@@ -92,6 +93,7 @@ app.post('/validarFace', function (req, res) {
     
 })
 app.post('/cadastrarFace', function (req, res) {
+
     async function cadastrarFace(req, res) {
         if (!req.body.id) {
             return res.send({ code: 2, msg: 'Informe um id sigeauto para a consulta.' });
