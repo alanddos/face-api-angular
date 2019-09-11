@@ -5,4 +5,8 @@ app.use(express.static(__dirname + "/dist/face-api")); //aqui você define onde 
 app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname + '/dist/face-api/index.html'))
 })
+app.post('/validar', function (req, res) {
+    res.send()
+    
+})
 app.listen(process.env.PORT || 3000);
