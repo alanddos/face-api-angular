@@ -28,7 +28,7 @@
     "ack-angular-webcam": "^1.9.3",
     "core-js": "^2.5.4",
     "express": "^4.16.4",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
