@@ -7,9 +7,11 @@ var faceVerif = require = require('./faceAPI/validacaoFacial');
 
 var app = express();
 app.use(express.static(__dirname + "/dist/face-api")); //aqui você define onde está o index.html da sua aplicação.
-app.get('*', function (req, res) {
+
+app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/dist/face-api/index.html'))
 })
+
 app.post('/validarFace', function (req, res) {
     res.send({code: 1, msg: 'Chegou no validar'})
     async function validarFace(req, res) {
