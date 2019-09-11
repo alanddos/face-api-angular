@@ -2,7 +2,7 @@
 // not required, but will speed up things drastically (python required)
 //var tensorflow = require('@tensorflow/tfjs-node');
 
-const tf = require('@tensorflow/tfjs');
+//const tf = require('@tensorflow/tfjs');
 require('@tensorflow/tfjs-node');
 
 var fetch = require('node-fetch')
