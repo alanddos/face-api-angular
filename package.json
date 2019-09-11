@@ -1,6 +1,10 @@
 {
-  "name": "face-api",
-  "version": "0.0.0",
+  "name": "myapp",
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.3.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node serve.js",
@@ -52,9 +56,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
-  },
-  "engines": {
-    "node": "10.15.3",
-    "npm": "6.10.2"
   }
 }
