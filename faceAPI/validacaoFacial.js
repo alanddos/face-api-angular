@@ -19,7 +19,9 @@ var canvas = require('canvas-node')
 
 //import * as faceapi from 'face-api.js';
 
-var faceapi = require('./face-api')
+const faceAPIURL = path.join(__dirname, 'face-api');
+
+var faceapi = require(faceAPIURL)
 
 // patch nodejs environment, we need to provide an implementation of
 // HTMLCanvasElement and HTMLImageElement, additionally an implementation
