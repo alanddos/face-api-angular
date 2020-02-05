@@ -21,7 +21,7 @@ app.get('/capturar', function (req, res) {
     res.sendFile(obj)
 })
 
-app.post('/validarFace', function (req, res) {
+app.post('/validarFace', function async (req, res) {
     
     let faces;
     if (!req.body.id) {
